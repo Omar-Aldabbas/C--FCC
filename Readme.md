@@ -1,7 +1,6 @@
 ### Introduction 
 
----
----
+
 
 ## 🧱 C# Data Types
 
@@ -202,3 +201,100 @@ Strings are immutable text objects.
 Provide many built-in methods to search, transform, and manage text.
 
 String interpolation ($"") is the cleanest way to format text.
+
+----------------------
+
+
+# 🧮 C# Math Methods
+
+C# provides a built-in `Math` class in the `System` namespace for performing common mathematical operations. All methods are **static**, so you can call them directly without creating an object.
+
+---
+
+## 🔹 Common Math Methods
+
+### 1️⃣ `Math.Abs()`  
+Returns the **absolute value** of a number.
+
+```csharp
+int a = -5;
+int result = Math.Abs(a); // 5
+```
+
+### 2️⃣ Math.Pow()
+Raises a number to a specified power.
+
+```csharp
+double baseNum = 2;
+double power = 3;
+double result = Math.Pow(baseNum, power); // 8
+```
+
+### 3️⃣ Math.Sqrt()
+Returns the square root of a number.
+
+```csharp
+double num = 16;
+double result = Math.Sqrt(num); // 4
+```
+
+
+### 4️⃣ Math.Round()
+Rounds a number to the nearest integer (or specified decimal places).
+
+```csharp
+double x = 3.7;
+double y = Math.Round(x); // 4
+
+double z = 3.4567;
+double rounded = Math.Round(z, 2); // 3.46
+```
+
+
+### 5️⃣ Math.Ceiling() / Math.Floor()
+Ceiling() → rounds up
+
+Floor() → rounds down
+
+```csharp
+double n = 3.2;
+Math.Ceiling(n); // 4
+
+Math.Floor(n);   // 3
+```
+
+
+### 6️⃣ Math.Max() / Math.Min()
+Returns the maximum or minimum of two numbers.
+
+```csharp
+int a = 5, b = 10;
+Math.Max(a, b); // 10
+Math.Min(a, b); // 5
+```
+
+
+### 7️⃣ Math.Sin(), Math.Cos(), Math.Tan()
+Trigonometric functions (input in radians).
+
+```csharp
+double angle = Math.PI / 2; // 90 degrees
+double sinValue = Math.Sin(angle); // 1
+double cosValue = Math.Cos(angle); // 0
+```
+
+### 8️⃣ Math.Round(), Math.Truncate()
+
+```csharp
+double num = 3.75;
+Math.Round(num);    // 4
+Math.Truncate(num); // 3
+```
+
+
+### 🔹 Summary
+Use Math class for all standard math operations.
+
+Methods are static, so call like Math.MethodName().
+
+Supports: absolute value, power, square root, rounding, min/max, and trigonometry.
